@@ -1,0 +1,115 @@
+.admin-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px;
+}
+
+/* Welcome Text */
+.admin-welcome-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #343a40; /* Dark gray */
+}
+
+/* Orange Highlighted Text */
+.admin-text-orange {
+  color: #0821fa; /* Professional orange */
+  font-weight: 700;
+}
+
+/* Login Box */
+.admin-login-box {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 30px;
+  width: 100%;
+  max-width: 400px; /* Centered box */
+  text-align: center;
+}
+
+/* Login Title */
+.admin-login-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #343a40; /* Dark gray */
+}
+
+/* Input Fields */
+.admin-input-field {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #495057; /* Dark gray text */
+  background-color: #f8f9fa; /* Light gray background */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Input Field Focus */
+.admin-input-field:focus {
+  border-color: #0d6efd; /* Bootstrap primary blue */
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.5); /* Subtle blue glow */
+  outline: none;
+}
+
+/* Error Message */
+.admin-error-message {
+  color: #dc3545; /* Bootstrap danger red */
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Button Container */
+.admin-button-container {
+  margin-top: 20px;
+}
+
+/* Login Button */
+.admin-login-button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #3700ff; /* Orange */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button Hover Effect */
+.admin-login-button:hover {
+  background-color: #242eef; /* Darker orange on hover */
+  transform: translateY(-1px); /* Subtle lift effect */
+}
+
+/* Disabled Button */
+.admin-login-button.disabled {
+  background-color: #b6d3f7; /* Lighter orange for disabled state */
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .admin-login-box {
+    width: 90%; /* Adjust width for mobile devices */
+    padding: 20px;
+  }
+
+  .admin-welcome-text {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+}
